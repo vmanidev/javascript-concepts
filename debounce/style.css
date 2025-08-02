@@ -1,0 +1,40 @@
+body {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  margin: auto;
+  gap: 50px;
+  font-family: monospace;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+#search-container {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  margin-top: 50px;
+  color: darkcyan;
+}
+
+#search-bar {
+  width: 100%;
+  padding: 1em;
+  border-radius: 1em;
+  outline: none;
+  border: 2px solid darkcyan;
+  font-family: monospace;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+#display-board {
+  min-height: 200px;
+  border: 2px solid darkcyan;
+  border-radius: 1em;
+  padding: 1em;
+}
+
+#info {
+  color: red;
+}

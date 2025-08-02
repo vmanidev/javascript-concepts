@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Debounce</title>
+    <script src="./debounce.js" type="text/javascript" defer></script>
+    <link rel="stylesheet" href="./style.css" type="text/css" />
+  </head>
+  <body>
+    <div id="search-container">
+      <label for="search-bar">Debounce</label>
+      <input
+        id="search-bar"
+        name="search-q"
+        type="input"
+        placeholder="type something..."
+        oninput="display(event)"
+      />
+    </div>
+    <div id="display-board"></div>
+    <small id="info">
+      <sup>*</sup>The display updates 1000ms after you stop typing (debounce
+      time: 1000ms).
+    </small>
+  </body>
+</html>

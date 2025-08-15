@@ -15,3 +15,10 @@ This repository contains implementations of various core and advanced JavaScript
 **Description:** Ensures a function runs at most once within a fixed time interval, regardless of how many times it’s triggered.  
 
 [🎥 Demo Video](https://github.com/vmanidev/javascript-concepts/blob/50e0ac005a207cbe3cbab54752ba0746ac530c31/demo/throttle.mov)
+
+---
+
+## 3. Polyfill   
+**Description:** A polyfill is a technique that implements a feature in older environments or browsers that do not natively support it.
+
+---

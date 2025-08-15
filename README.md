@@ -21,4 +21,8 @@ This repository contains implementations of various core and advanced JavaScript
 ## 3. Polyfill   
 **Description:** A polyfill is a technique that implements a feature in older environments or browsers that do not natively support it.
 
+    ● Array.prototype.map()
+    
+    ● Array.prototype.filter()
+
 ---

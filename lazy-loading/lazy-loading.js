@@ -16,7 +16,26 @@ getImages().then(res => {
         img.setAttribute("data-src", download_url);
         img.setAttribute("loading", "lazy")
         rootElement.append(img);
-    })
+    });
+
+    loadImageOnDemand();
 });
+
+function loadImageOnDemand() {
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const img = entry.target;
+                img.src = img.dataset.src;
+
+                observer.unobserve(img);
+            }
+        })
+    }, { root: null, rootMargin: "0px", threshold: 0.5 });
+
+    const images = document.querySelectorAll("img[data-src]");
+    images.forEach(img => observer.observe(img));
+}
 
 

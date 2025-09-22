@@ -8,4 +8,14 @@ async function getImages() {
     }
 }
 
+getImages().then(res => {
+    const rootElement = document.getElementById("root");
+    res.forEach(({ download_url }) => {
+        const img = document.createElement("img");
+        img.setAttribute("data-src", download_url);
+        img.setAttribute("loading", "lazy")
+        rootElement.append(img);
+    })
+});
+
 

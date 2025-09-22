@@ -15,12 +15,16 @@ This repository contains implementations of various core and advanced JavaScript
 
 [🎥 Demo Video](https://github.com/vmanidev/javascript-concepts/blob/9cfa0175de956dc6155d8b22b209e0e77f98aa1b/demo/debounce.mov)
 
+[🌐 Live Demo](https://javascript-concepts-drab.vercel.app/debounce/index.html)
+
 ---
 
 ## 2. Throttle  
 **Description:** Ensures a function runs at most once within a fixed time interval, regardless of how many times it’s triggered.  
 
 [🎥 Demo Video](https://github.com/vmanidev/javascript-concepts/blob/50e0ac005a207cbe3cbab54752ba0746ac530c31/demo/throttle.mov)
+
+[🌐 Live Demo](https://javascript-concepts-drab.vercel.app/throttle/index.html)
 
 ---
 

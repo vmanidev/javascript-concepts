@@ -38,7 +38,7 @@ This repository contains implementations of various core and advanced JavaScript
 ---
 
 ## 4. Lazy loading
-**Description:** A technique that defers image loading until they are about to appear in the viewport. By leveraging the Intersection Observer API, it improves page performance, reduces initial load time, and optimizes bandwidth usage.
+**Description:** A technique that defers image loading until they are about to appear in the viewport. By leveraging the **`Intersection Observer API`**, it improves page performance, reduces initial load time, and optimizes bandwidth usage.
 
 [🌐 Live Demo](https://javascript-concepts-drab.vercel.app/lazy-loading/lazy-loading.html)
 

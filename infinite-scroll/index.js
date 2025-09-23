@@ -7,6 +7,8 @@ function createCards() {
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In fringilla mattis metus, eu porttitor eros accumsan molestie. Nulla facilisi. Nulla varius urna non turpis dictum, vel hendrerit quam viverra."
     };
 
+    const fragment = document.createDocumentFragment();
+
     for (let i = 0; i <= 5; i++) {
         const article = document.createElement("article");
         const h3 = document.createElement("h3");
@@ -17,7 +19,7 @@ function createCards() {
 
         article.append(h3, p);
         article.className = "card";
-        cards.append(article);
+        fragment.append(article);
 
     }
 };

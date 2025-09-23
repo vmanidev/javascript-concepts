@@ -8,6 +8,14 @@ body {
   margin: 0;
 }
 
+#cards {
+  display: grid;
+  gap: 16px;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-template-rows: auto;
+}
+
 .card {
   height: 150px;
   width: 400px;

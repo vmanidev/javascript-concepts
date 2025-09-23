@@ -1,6 +1,6 @@
-function createCards() {
+const cards = document.getElementById("cards");
 
-    const cards = document.getElementById("cards");
+function createCards() {
 
     const placeholderObj = {
         title: "Lorem Ipsum",

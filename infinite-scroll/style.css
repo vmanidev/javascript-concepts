@@ -6,22 +6,33 @@
 body {
   padding: 0;
   margin: 0;
+  text-align: center;
 }
 
 #cards {
   display: grid;
   gap: 16px;
   justify-content: center;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-template-rows: auto;
+  margin: 10px auto;
 }
 
 .card {
+  width: 80%;
+  margin: auto;
   font-size: 14px;
   line-height: 24px;
-  width: 400px;
   padding: 10px;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
-  text-align: center;
+}
+
+#loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  margin: 10px auto;
+  color: #0000ff;
 }

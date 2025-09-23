@@ -13,13 +13,14 @@ body {
   display: grid;
   gap: 16px;
   justify-content: center;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   margin: 10px auto;
 }
 
 .card {
   width: 80%;
+  height: 200px;
   margin: auto;
   font-size: 14px;
   line-height: 24px;

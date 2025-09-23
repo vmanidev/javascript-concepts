@@ -9,7 +9,7 @@ function createCards() {
 
         const fragment = document.createDocumentFragment();
 
-        for (let i = 0; i < 9; i++) {
+        for (let i = 0; i < 8; i++) {
             const article = document.createElement("article");
             const h3 = document.createElement("h3");
             const p = document.createElement("p");

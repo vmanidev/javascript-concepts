@@ -8,16 +8,16 @@ function createCards() {
     };
 
     for (let i = 0; i <= 5; i++) {
-        const div = document.createElement("div");
+        const article = document.createElement("article");
         const h3 = document.createElement("h3");
         const p = document.createElement("p");
 
-        div.append(h3, placeholderObj.title);
-        div.append(p, placeholderObj.description);
+        h3.textContent = placeholderObj.title;
+        p.textContent = placeholderObj.description;
 
-        div.setAttribute("class", "card");
-        console.log(cards)
-        cards.appendChild(div);
+        article.append(h3, p);
+        article.className = "card";
+        cards.append(article);
 
     }
 };

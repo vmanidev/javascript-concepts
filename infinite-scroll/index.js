@@ -26,3 +26,21 @@ function createCards() {
         cards.appendChild(fragment);
     }, 500);
 };
+
+
+function onDemandCardsLoad() {
+
+    const loader = document.getElementById("loader");
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                createCards();
+            }
+        })
+    }, { root: null, rootMargin: "0px", threshold: 0.7 });
+
+    observer.observe(loader);
+};
+
+onDemandCardsLoad();

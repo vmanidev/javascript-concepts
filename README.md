@@ -37,9 +37,30 @@ This repository contains implementations of various core and advanced JavaScript
 
 ---
 
-## 4. Lazy loading
+## 4. Lazy Loading
 **Description:** A technique that defers image loading until they are about to appear in the viewport. By leveraging the **`Intersection Observer API`**, it improves page performance, reduces initial load time, and optimizes bandwidth usage.
 
 [🌐 Live Demo](https://javascript-concepts-drab.vercel.app/lazy-loading/lazy-loading.html)
 
 ---
+
+## 5. Infinite Scroll 
+
+**Description:** Dynamically loading cards as you scroll, using the **Intersection Observer API**. The implementation includes **performance optimizations** such as `DocumentFragment` and controlled DOM updates for smooth rendering.
+
+[🌐 Live Demo](https://javascript-concepts-drab.vercel.app/infinite-scroll/index.html)
+
+### Features
+
+- Lazy-loads cards when the loader comes into view
+- Uses `IntersectionObserver` to detect scrolling
+- Wraps card creation in a `Promise` to handle unobserving/reobserving loader
+- Optimized DOM updates using `DocumentFragment` and batched appends
+
+---
+
+## Usage
+
+```bash
+git clone https://github.com/vmanidev/javascript-concepts.git
+

@@ -17,7 +17,8 @@ body {
 }
 
 .card {
-  height: 150px;
+  font-size: 14px;
+  line-height: 24px;
   width: 400px;
   padding: 10px;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);

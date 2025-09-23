@@ -13,7 +13,7 @@ body {
   display: grid;
   gap: 16px;
   justify-content: center;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-template-rows: auto;
   margin: 10px auto;
 }
@@ -36,4 +36,10 @@ body {
   height: 50px;
   margin: 10px auto;
   color: #0000ff;
+}
+
+@media screen and (min-width: 768px) {
+  #cards {
+    grid-template-columns: 1fr 1fr;
+  }
 }

@@ -20,6 +20,9 @@ function createCards() {
         article.append(h3, p);
         article.className = "card";
         fragment.append(article);
-
     }
+
+    setTimeout(() => {
+        cards.appendChild(fragment);
+    }, 500);
 };

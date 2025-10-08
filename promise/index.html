@@ -13,5 +13,68 @@
       <button onclick="promiseAny()">promise Any</button>
       <button onclick="promiseRace()">promise Race</button>
     </div>
+    <ol>
+      <li>
+        <strong>Promise.all()</strong>
+        <ul>
+          <li>Executes promises in parallel.</li>
+          <li>Waits for <strong>all promises</strong> to resolve.</li>
+          <li>
+            If <strong>any one promise fails</strong>, it immediately rejects
+            and throws that error.
+          </li>
+          <li>Returns an array of resolved values (if successful).</li>
+        </ul>
+      </li>
+
+      <li>
+        <strong>Promise.allSettled()</strong>
+        <ul>
+          <li>Executes promises in parallel.</li>
+          <li>
+            Waits for <strong>all promises</strong> to finish — regardless of
+            success or failure.
+          </li>
+          <li>Never rejects; always resolves with an array of results.</li>
+          <li>
+            Each result object contains:
+            <code>{ status: "fulfilled", value }</code> or
+            <code>{ status: "rejected", reason }</code>.
+          </li>
+        </ul>
+      </li>
+
+      <li>
+        <strong>Promise.race()</strong>
+        <ul>
+          <li>Executes promises in parallel.</li>
+          <li>
+            Resolves or rejects
+            <strong>as soon as the first promise settles</strong> (either
+            success or failure).
+          </li>
+          <li>Does not wait for other promises once one settles.</li>
+          <li>Useful when you only care about the fastest result.</li>
+        </ul>
+      </li>
+
+      <li>
+        <strong>Promise.any()</strong>
+        <ul>
+          <li>Executes promises in parallel.</li>
+          <li>
+            Resolves as soon as <strong>the first promise fulfills</strong>.
+          </li>
+          <li>
+            If <strong>all promises reject</strong>, it rejects with an
+            <code>AggregateError</code>.
+          </li>
+          <li>
+            Ignores any rejected promises until at least one resolves
+            successfully.
+          </li>
+        </ul>
+      </li>
+    </ol>
   </body>
 </html>

@@ -81,8 +81,24 @@ function promiseAllFail() {
 // -----------------------------------------------
 
 // type 2 - promise.allSettled()
-
 function promiseAllSettled() {
   const promise = Promise.allSettled([p1, p2, p3, p4]);
+  promise.then((res) => console.log(res));
+}
+// -----------------------------------------------
+
+// type 2 - promise.any()
+const task = (taskName, delay) => {
+  return new Promise((resolve) => {
+    setTimeout(() => resolve(`${taskName} is resolved.`), delay);
+  });
+};
+
+function promiseAny() {
+  const promise = Promise.any([
+    task("task 1", 2000),
+    task("task 2", 1000),
+    task("task 3", 500),
+  ]);
   promise.then((res) => console.log(res));
 }

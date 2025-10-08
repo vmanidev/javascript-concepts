@@ -58,3 +58,22 @@ function bookCab() {
     .drop("Mani")
     .rest(5);
 }
+
+// -----------------------------------------------
+
+//Promise types
+const p1 = Promise.resolve("Promise 1");
+const p2 = Promise.resolve("Promise 2");
+const p3 = Promise.resolve("Promise 3");
+const p4 = Promise.reject("Promise 4 failed");
+
+// type 1 - promise.all()
+function promiseAllSuccess() {
+  const promise = Promise.all([p1, p2, p3]);
+  promise.then((res) => console.log(res));
+}
+
+function promiseAllFail() {
+  const promise = Promise.all([p1, p2, p3, p4]);
+  promise.then((res) => console.log(res));
+}

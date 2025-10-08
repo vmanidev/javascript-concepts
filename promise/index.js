@@ -77,3 +77,12 @@ function promiseAllFail() {
   const promise = Promise.all([p1, p2, p3, p4]);
   promise.then((res) => console.log(res));
 }
+
+// -----------------------------------------------
+
+// type 2 - promise.allSettled()
+
+function promiseAllSettled() {
+  const promise = Promise.allSettled([p1, p2, p3, p4]);
+  promise.then((res) => console.log(res));
+}

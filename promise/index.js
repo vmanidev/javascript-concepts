@@ -87,7 +87,7 @@ function promiseAllSettled() {
 }
 // -----------------------------------------------
 
-// type 2 - promise.any()
+// type 3 - promise.any()
 const task = (taskName, delay) => {
   return new Promise((resolve) => {
     setTimeout(() => resolve(`${taskName} is resolved.`), delay);
@@ -98,6 +98,24 @@ function promiseAny() {
   const promise = Promise.any([
     task("task 1", 2000),
     task("task 2", 1000),
+    task("task 3", 500),
+  ]);
+  promise.then((res) => console.log(res));
+}
+
+// -----------------------------------------------
+
+// type 4 - promise.race()
+function failedTask(taskName, delay) {
+  return new Promise((reject) =>
+    setTimeout(() => reject(`${taskName} is failed.`), delay)
+  );
+}
+
+function promiseRace() {
+  const promise = Promise.race([
+    task("task 1", 2000),
+    failedTask("task 2", 100),
     task("task 3", 500),
   ]);
   promise.then((res) => console.log(res));

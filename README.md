@@ -59,6 +59,22 @@ This repository contains implementations of various core and advanced JavaScript
 
 ---
 
+## 6. Promises
+
+**Description:**
+Handles asynchronous operations in JavaScript, allowing sequential or parallel execution with proper success/error handling.
+
+**Features:**
+
+* Represents the eventual completion or failure of an async operation
+* **Promise Chaining:** Execute tasks sequentially using `.then()`
+* **Promise.all():** Run multiple promises in parallel; fails if any reject
+* **Promise.allSettled():** Wait for all promises to settle regardless of outcome
+* **Promise.race():** Resolves/rejects with the first settled promise
+* **Promise.any():** Resolves with the first fulfilled promise; rejects with `AggregateError` if all fail
+
+---
+
 ## Usage
 
 ```bash
